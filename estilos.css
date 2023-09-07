@@ -1,0 +1,275 @@
+/* Estilos generales para el contenido */
+body {
+    width: 80%;
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    
+    background-color: #3181cc; /* Color de fondo del menú (azul claro) */
+    padding: 10px 0; /* Espaciado interno para el menú */
+    position: fixed; /* Menú fijo en la parte superior */
+    top: 0; /* Alinea el menú en la parte superior */
+    /*left: 0; /* Alinea el menú a la izquierda de la página */
+    width: 80%; /* Ancho del menú al 100% */
+    z-index: 1; /* Coloca el menú por encima de otros elementos */
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio uniforme entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Logo en el menú */
+.logo {
+    width: 150px; /* Tamaño fijo para el logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+nav ul {
+
+    list-style: none; /* Elimina los marcadores de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Muestra los botones en línea (uno al lado del otro) */
+}
+
+nav li {
+
+    margin: 0 10px; /* Espaciado horizontal entre los botones */
+}
+
+nav a {
+    color: white; /* Color del texto de los botones (blanco) */
+    text-decoration: none; /* Elimina la decoración de los enlaces */
+    padding: 5px 10px; /* Espaciado interno para los botones */
+    border-right: 2px solid rgba(255, 255, 255, 0.2); /* Línea poco visible separando los botones */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el cambio de color */
+    font-size: 15px; /* Tamaño fijo para las letras del menú */
+}
+
+nav a:hover {
+    background-color: #4da1ff; /* Color de fondo al pasar el cursor por encima (azul más claro) */
+    color: white; /* Color del texto al pasar el cursor por encima (blanco) */
+    border-bottom: 2px solid rgba(255, 255, 255, 0); /* Oculta la línea al pasar el cursor por encima */
+}
+
+
+
+/* Logo en el menú 
+.logo {
+    display: flex;
+    padding: 5px;
+    margin-top: 0px;
+    width: 350px;
+    height: 100%;
+    margin-right: 275px;
+}*/
+
+/* Estilo para el carrusel de imágenes */
+.carrusel {
+    width: 100%;
+    overflow: hidden; /* Oculta el contenido que excede el área del carrusel */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carrusel-imagenes {
+    display: flex; /* Utiliza flexbox para colocar las imágenes en línea */
+    transition: transform 0.5s ease; /* Animación de transición de desplazamiento */
+}
+
+.carrusel-imagenes img {
+    flex: 0 0 100%; /* Asegura que cada imagen ocupe todo el ancho del carrusel */
+    height: 500px; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+
+/* Estilo para la sección de 3 columnas y 3 filas (cuadros) */
+.seccion-cuadros {
+    /* Estilos para la sección de cuadros */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Espacio entre los cuadros */
+    margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
+}
+
+/* Estilo para los cuadros */
+.cuadro {
+    width: 100%;
+    height: 100%; /* Ajusta la altura según lo que desees */
+    background-color: #ccc; /* Color de fondo del cuadro */
+    /* Añade otros estilos para los cuadros, como margen, padding, etc. */
+}
+
+/* Estilo para la sección doble */
+.seccion-doble {
+    /* Estilos para la sección doble */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Espacio entre las dos partes de la sección doble */
+    margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
+}
+
+/* Estilos para los botones de navegación */
+.boton-izquierda,
+.boton-derecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px; /* Reducimos el tamaño de los botones */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.boton-izquierda {
+  left: 10px;
+}
+
+.boton-derecha {
+  right: 10px;
+}
+
+/* Estilos generales para el contenido */
+body {
+    width: 80%;
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+.tittle{
+    text-align: center;
+}
+
+/* Estilo para la sección de imagen */
+.seccion-imagen {
+    /* Estilos para la sección de imagen */
+}
+
+/* Estilo para los cuadros */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: auto;
+  height: auto;
+  margin: 0;
+}
+
+.box {
+  width: 48%;
+  padding: 5px;
+  border: 0px solid #999;
+  box-sizing: border-box;
+}
+
+.box img {
+  width: 100%;
+  max-width: none;
+  height: 450px; /* Cambia este valor según lo que se vea mejor para tus imágenes */
+  object-fit: cover; /* Esto asegura que la imagen cubra el contenedor */
+}
+
+/* Estilos de comentarios */
+.comment-section {
+  margin-top: 10px;
+}
+
+.comments-list {
+  margin-top: 5px;
+}
+
+.comment-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.comment-box p {
+  margin: 20;
+}
+
+/* Estilos para la sección doble */
+.doble-seccion {
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  grid-gap: 10px;
+}
+
+.cuadro-izquierdo,
+.cuadro-derecho {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.cuadro-izquierdo img {
+  width: 100%;
+  height: auto;
+}
+
+.cuadro-derecho h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cuadro-derecho p {
+  font-size: 16px;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #777;
+  color: white;
+  text-align: center;
+  padding: 0px 0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-contenido {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes-sociales {
+  flex: 1;
+  text-align: left;
+}
+
+.redes-sociales h3 {
+  font-size: 20px;
+}
+
+.redes-sociales img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.contactanos {
+  flex: 1;
+  text-align: right;
+}
+
+.contactanos h3 {
+  font-size: 20px;
+}
+
+.contactanos p {
+  font-size: 16px;
+}
+
+/* Estilos para los botones de eliminar */
+.delete-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
